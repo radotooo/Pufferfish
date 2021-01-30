@@ -13,7 +13,7 @@ export default class Fish extends Sprite {
     this.interactive = true;
     this.buttonMode = true;
 
-    this.on('pointerdown', () => this.expand());
+    this.on('click', () => this.expand());
   }
 
   /**
