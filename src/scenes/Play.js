@@ -6,12 +6,15 @@ import { Texture } from 'pixi.js';
 export default class Play extends Scene {
   async onCreated() {
     const footer = new Footer();
+
     footer.x = -window.innerWidth / 2;
     footer.y = window.innerHeight / 2 - footer.height;
-    // this.addChild(footer);
+
+    this.addChild(footer);
 
     const texture = Texture.from('smallFish');
     const fish = new Fish(texture);
+
     this.addChild(fish);
   }
 
